@@ -1,0 +1,131 @@
+/* Footer principal */
+footer {
+    background: #141419; /* Fondo oscuro para el pie de página */
+    color: #f0f0f0; /* Texto claro */
+    padding: 20px 0;
+    text-align: center;
+    margin: 0; /* Elimina el margen para evitar espacio extra */
+    position: relative;
+}
+
+/* Contenedor del contenido del pie de página */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo del logo y el mensaje */
+.footer-logo {
+    flex: 1;
+    text-align: left;
+    max-width: 200px; /* Ancho máximo para el logo y el mensaje */
+    margin-bottom: 20px; /* Espacio debajo del logo para pantallas pequeñas */
+}
+
+.footer-logo-img {
+    max-height: 40px; /* Tamaño del logo */
+}
+
+.footer-message {
+    margin-top: 10px;
+    font-size: 14px; /* Tamaño del mensaje */
+    color: #ffafcc; /* Rosa pastel para el mensaje */
+    line-height: 1.4; /* Espaciado entre líneas */
+}
+
+/* Enlaces del pie de página */
+.footer-links {
+    flex: 1;
+    text-align: left;
+    margin-bottom: 20px; /* Espacio debajo de los enlaces para pantallas pequeñas */
+}
+
+.footer-links h3 {
+    color: #ffafcc; /* Título en rosa pastel */
+    font-size: 16px; /* Tamaño del título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 5px; /* Espacio entre los elementos */
+}
+
+.footer-links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease; /* Transición suave para el color del enlace */
+}
+
+.footer-links a:hover {
+    color: #ffafcc; /* Rosa pastel en hover */
+}
+
+/* Sección del copyright */
+.footer-dmca {
+    position: absolute; /* Posiciona el badge de DMCA en relación a .footer-content */
+    bottom: 10px; /* Espacio desde el borde inferior */
+    right: 10px; /* Espacio desde el borde derecho */
+    text-align: center;
+}
+
+.footer-dmca a {
+    display: inline-block;
+}
+
+.footer-dmca img {
+    width: 140px; /* Tamaño mayor del badge, ajusta según tu preferencia */
+    height: auto; /* Mantiene la proporción del badge */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px; /* Reducción del padding en pantallas pequeñas */
+    }
+
+    .footer-logo, .footer-links {
+        text-align: center;
+        max-width: 100%;
+        margin-bottom: 20px; /* Espacio debajo de los elementos para pantallas pequeñas */
+    }
+
+    .footer-dmca {
+        position: static;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo img {
+        max-height: 30px; /* Tamaño del logo para pantallas pequeñas */
+    }
+
+    .footer-message {
+        font-size: 12px; /* Tamaño del mensaje para pantallas pequeñas */
+    }
+
+    .footer-links h3 {
+        font-size: 14px; /* Tamaño del título para pantallas pequeñas */
+    }
+
+    .footer-links a {
+        font-size: 12px; /* Tamaño del enlace para pantallas pequeñas */
+    }
+
+    .footer-dmca img {
+        width: 100px; /* Tamaño menor del badge para pantallas pequeñas */
+    }
+}
